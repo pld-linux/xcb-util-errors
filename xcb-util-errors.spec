@@ -1,16 +1,18 @@
 Summary:	XCB util-errors module
 Summary(pl.UTF-8):	Moduł XCB util-errors
 Name:		xcb-util-errors
-Version:	1.0
+Version:	1.0.1
 Release:	1
 License:	MIT
 Group:		Libraries
-Source0:	http://xcb.freedesktop.org/dist/%{name}-%{version}.tar.bz2
-# Source0-md5:	4e389b65eb5a4b5c0d2958d628df87a8
-URL:		http://xcb.freedesktop.org/XcbUtil/
+Source0:	https://xcb.freedesktop.org/dist/%{name}-%{version}.tar.xz
+# Source0-md5:	322cf9df283625223933ffcecb4a1cca
+URL:		https://xcb.freedesktop.org/XcbUtil/
 BuildRequires:	libxcb-devel >= 1.4
 BuildRequires:	pkgconfig
+BuildRequires:	tar >= 1:1.22
 BuildRequires:	xcb-proto >= 1.6
+BuildRequires:	xz
 Requires:	libxcb >= 1.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
